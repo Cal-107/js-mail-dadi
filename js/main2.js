@@ -6,14 +6,16 @@
 // Generare un numero random
 
 let numGioc = Math.floor(Math.random() * 6) + 1;
+console.log(`il numero del giocatore è ${numGioc}`)
 let numComp = Math.floor(Math.random() * 6) + 1;
+console.log(`il numero del computer è ${numComp}`)
 
 if (numGioc > numComp ) {
-    alert('Il giocatore ha vinto')
-    console.log(numGioc)
+    alert(`Il giocatore ha vinto con il numero ${numGioc}`)
+    console.log (`Il giocatore ha vinto con il numero ${numGioc}`)
 } else if (numGioc < numComp) {
-    alert('il computer ha vinto')
-    console.log(numComp)
+    alert(`il computer ha vinto con il numero ${numComp}`)
+    console.log (`il computer ha vinto con il numero ${numComp}`)
 } else {
     alert('pareggio')
     console.log('pareggio')
